@@ -1,0 +1,21 @@
+[package]
+name = "gpu-cc"
+version = "0.1.0"
+edition = "2021"
+description = "Query, set and reset NVIDIA GPU Confidential Computing (CC) mode"
+license = "MIT"
+readme = "README.md"
+keywords = ["nvidia", "gpu", "confidential-computing", "hopper", "blackwell"]
+categories = ["hardware-support"]
+
+[lib]
+name = "gpu_cc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gpu-cc"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+libc = "0.2"
